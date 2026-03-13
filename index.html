@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>GO Entertainment</title>
+<!-- Tipografía Moon (Script/Cursiva) -->
+<link href="https://fonts.googleapis.com/css2?family=Moon&display=swap" rel="stylesheet">
+<style>
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Moon', cursive;
+    background: linear-gradient(to bottom right, #d4a5ff, #7f5af0);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Menú */
+nav {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Logo animado */
+.logo {
+    font-family: 'Moon', cursive;
+    font-size: 140px;
+    color: gold;
+    margin: 80px 0 20px;
+    position: relative;
+    display: inline-block;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Detalles decorativos */
+.logo::after {
+    content: '';
+    position: absolute;
+    width: 140%;
+    height: 15px;
+    background: radial-gradient(circle, #ffd700, transparent);
+    bottom: -10px;
+    left: -20%;
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+/* Animación de resplandor */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffa500; }
+    50% { text-shadow: 0 0 20px #fff, 0 0 40px #ffd700, 0 0 60px #ffa500; }
+    100% { text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffa500; }
+}
+
+/* Introducción */
+.intro {
+    font-size: 26px;
+    max-width: 800px;
+    margin: 20px auto 80px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Botón de acción */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7f5af0;
+    background-color: #ffd700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffc700;
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav>
+<a href="inicio.html">Inicio</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="Servicios.html">Servicios</a>
+<a href="Contacto.html">Contacto</a>
+<a href="galeria.html">Galería</a>
+</nav>
+
+<!-- Logo -->
+<div class="logo">GO</div>
+<h2>GO Entertainment</h2>
+
+<!-- Introducción -->
+<p class="intro">
+Bienvenido a <strong>GO Entertainment</strong> 🌟, la agencia que transforma sueños en estrellas del K-Pop. 
+Descubre a nuestros idols, sus shows en vivo y experiencias exclusivas para fans. 🎤💖✨
+</p>
+
+<!-- Botón CTA -->
+<a href="nosotros.html" class="btn">Conócenos</a>
+
+</body>
+</html>
