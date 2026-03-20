@@ -2,27 +2,25 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>GO Entertainment</title>
-<!-- Tipografía Moon (Script/Cursiva) -->
+<title>Cálculos - GO Entertainment</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Moon&display=swap" rel="stylesheet">
+
 <style>
-/* Estilos generales */
 body {
     margin: 0;
     font-family: 'Moon', cursive;
     background: linear-gradient(to bottom right, #d4a5ff, #7f5af0);
     color: #fff;
     text-align: center;
-    overflow-x: hidden;
 }
 
-/* Menú */
+/* MENÚ */
 nav {
     background-color: rgba(0,0,0,0.7);
     padding: 15px 0;
     position: sticky;
     top: 0;
-    z-index: 100;
 }
 
 nav a {
@@ -31,97 +29,79 @@ nav a {
     margin: 0 25px;
     font-weight: bold;
     font-size: 18px;
-    transition: all 0.3s;
 }
 
 nav a:hover {
-    color: #ffd700;
-    transform: scale(1.1);
-}
-
-/* Logo animado */
-.logo {
-    font-family: 'Moon', cursive;
-    font-size: 140px;
     color: gold;
-    margin: 80px 0 20px;
-    position: relative;
-    display: inline-block;
-    animation: glow 2s ease-in-out infinite alternate;
 }
 
-/* Detalles decorativos */
-.logo::after {
-    content: '';
-    position: absolute;
-    width: 140%;
-    height: 15px;
-    background: radial-gradient(circle, #ffd700, transparent);
-    bottom: -10px;
-    left: -20%;
-    border-radius: 50%;
-    filter: blur(15px);
+/* LOGO */
+.logo {
+    font-size: 120px;
+    color: gold;
+    margin: 60px 0 10px;
+    animation: glow 2s infinite alternate;
 }
 
-/* Animación de resplandor */
 @keyframes glow {
-    0% { text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffa500; }
-    50% { text-shadow: 0 0 20px #fff, 0 0 40px #ffd700, 0 0 60px #ffa500; }
-    100% { text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffa500; }
+    from { text-shadow: 0 0 10px #fff, 0 0 20px gold; }
+    to { text-shadow: 0 0 20px #fff, 0 0 40px gold; }
 }
 
-/* Introducción */
-.intro {
-    font-size: 26px;
-    max-width: 800px;
-    margin: 20px auto 80px;
-    line-height: 1.6;
-    color: #fff;
+/* CALCULADORA */
+.calculadora {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    margin: 40px auto;
 }
 
-/* Botón de acción */
-.btn {
-    display: inline-block;
-    padding: 15px 40px;
-    margin-top: 30px;
-    font-size: 22px;
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background: gold;
     font-weight: bold;
-    color: #7f5af0;
-    background-color: #ffd700;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #ffc700;
-    transform: scale(1.05);
+.resultado {
+    margin-top: 15px;
+    font-size: 20px;
 }
 </style>
 </head>
+
 <body>
 
-<!-- Menú de navegación -->
+<!-- MENÚ COMPLETO -->
 <nav>
 <a href="inicio.html">Inicio</a>
 <a href="nosotros.html">Nosotros</a>
 <a href="Servicios.html">Servicios</a>
 <a href="Contacto.html">Contacto</a>
 <a href="galeria.html">Galería</a>
+<a href="calculos.html">Calculos</a>
 </nav>
 
-<!-- Logo -->
+<!-- LOGO -->
 <div class="logo">GO</div>
 <h2>GO Entertainment</h2>
 
-<!-- Introducción -->
-<p class="intro">
-Bienvenido a <strong>GO Entertainment</strong> 🌟, la agencia que transforma sueños en estrellas del K-Pop. 
-Descubre a nuestros idols, sus shows en vivo y experiencias exclusivas para fans. 🎤💖✨
-</p>
+<p>✨ Herramientas útiles para nuestros fans ✨</p>
 
-<!-- Botón CTA -->
-<a href="nosotros.html" class="btn">Conócenos</a>
+</script>
 
 </body>
 </html>
